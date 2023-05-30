@@ -1,0 +1,6 @@
+[submodule "mobile"]
+	ignore = untracked
+[submodule "server"]
+	ignore = untracked
+[submodule "web"]
+	ignore = untracked
