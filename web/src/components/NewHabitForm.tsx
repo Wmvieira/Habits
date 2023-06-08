@@ -77,7 +77,7 @@ export function NewHabitForm(props: NewHabitFormProps) {
               className="flex items-center gap-3 group"
               checked={weekDays.includes(index)}
             >
-              <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500">
+              <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500 transition-colors">
                 <Checkbox.Indicator>
                   <Check size={20} className="text-white"></Check>
                 </Checkbox.Indicator>
@@ -91,7 +91,7 @@ export function NewHabitForm(props: NewHabitFormProps) {
 
       <button
         type="submit"
-        className="mt-6 rounded-lg p-4 flex items-center justify-center gap-3 font-semibold bg-green-400 hover:bg-green-500"
+        className="mt-6 rounded-lg p-4 flex items-center justify-center gap-3 font-semibold bg-green-500 hover:bg-green-400 transition-colors"
       >
         <Check size={20} weight="bold" />
         Confirmar
