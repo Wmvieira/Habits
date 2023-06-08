@@ -118,6 +118,8 @@ export async function appRoutes(app: FastifyInstance) {
   });
 
   app.get('/summary', async () => {
+    console.log('summary');
+
     const summary = await prisma.$queryRaw`
         SELECT 
             D.id 
@@ -140,7 +142,8 @@ export async function appRoutes(app: FastifyInstance) {
         ) as amount
         FROM days D
     `
-
+    console.log(summary);
+    
     return summary;
   })
 }
